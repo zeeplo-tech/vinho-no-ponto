@@ -1,8 +1,4 @@
 // dependencies
-@import url("_bootstrap-reboot.min.css");
-
-@import url("_bootstrap-grid.min.css");
-
 // vars
 $cinzaclaro: #edeef0;
 $preto: #545454;
@@ -114,10 +110,11 @@ body {
 }
 
 .btn {
-    border: 1px solid #ffc107;
-    color: #ffc107;
+    border: 1px solid lime;
+    color: lime;
     text-transform: uppercase;
     padding: .5rem 1.5rem;
+    line-height: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,17 +123,19 @@ body {
     width: 220px;
     max-width: 100%;
     border-radius: 4px;
+    text-align: center;
 
     &:hover {
-        background: #ffc107;
-        color: $branco;
+        background: lime;
+        color: #000;
     }
 }
 
 #cta {
     padding: 2rem;
-    background: url(img/bg.jpg) center;
-    color: $branco;
+    // background: url(img/bg.jpg) center;
+    background: #000;
+    color: lime;
 
     .row {
         justify-content: center;
@@ -209,6 +208,7 @@ section {
             font-size: 20pt;
             line-height: 1.2em;
             margin-bottom: 1rem;
+            min-height: 100px;
         }
 
         p {
